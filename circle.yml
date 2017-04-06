@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 6.10.2
+  services:
+    - docker
+test:
+  pre:
+    - npm install
+  override:
+    - node .
